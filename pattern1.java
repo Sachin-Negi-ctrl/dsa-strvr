@@ -1,13 +1,27 @@
+/*
+This function will print * of equal columns and rows
+* * * * 
+* * * * 
+* * * * 
+* * * * 
+*/
+
+import java.util.Scanner;
+
 public class pattern1{
-    public static void pattern(){
-        for(int i=1; i<=4; i++){
-            for(int j=1; j<=4; j++){
+    public static void pattern(int n){
+        for(int i=1; i<=n; i++){
+            for(int j=1; j<=n; j++){
                 System.out.print("*"); //For printing the the 4 stars.
             }
             System.out.println(); //For terminating line after 4 stars.
         }
     }
     public static void main(String[] args) {
-        pattern(); 
+        System.out.println("Enter the number of lines :");
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        sc.close();
+        pattern(n); 
     }
 }
