@@ -1,3 +1,15 @@
+/*
+This snippet will print the patter :
+* 
+* *
+* * *
+* * * * 
+* * * * *  
+
+up until n
+
+*/
+
 import java.util.Scanner;
 
 public class pattern2{
