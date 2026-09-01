@@ -25,6 +25,34 @@ public static void pattern(int n){
     }
 }
 
+//My approach
+/*
+import java.util.Scanner;
+
+public class demo{
+    public static void pattern(int n){
+        //for rows
+        for(int i=0; i<n; i++){
+            //for space
+            for(int j=0; j<i; j++){
+                System.out.print(" ");
+            }
+            //for stars
+            for(int k=i; k<n*2-i-1; k++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+    public static void main(String[] args) {
+        System.out.println("Enter the number of lines:");
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        pattern(n);
+    }
+}
+ */
+
     public static void main(String[] args) {
         System.out.println("Enter the number of lines:");
         Scanner sc = new Scanner(System.in);
