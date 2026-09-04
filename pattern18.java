@@ -14,8 +14,8 @@ public class pattern18 {
         for(int i=1; i<=n; i++){
             //for pattern
             for(int j=n-i; j<n; j++){
-                char start = 'A';
-                start +=j;
+                char start = 'A'; //Every time the "start" starts from 'A' which is equvalent to 1.(We have initialized this inside the loop bcz we have to get the start at 1 everytime before adding the j in it to get the desired o/p)
+                start +=j; //Then we add n-i value; for n=5=> 5-1 = 4, which eventually comes down to 'A'/1 + 4 which is 'E'/5. 
                 System.out.print(start+" ");
 
                 // ch++;
